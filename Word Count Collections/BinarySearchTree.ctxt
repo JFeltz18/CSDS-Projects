@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=
+comment0.target=BinarySearchTree()
+comment1.params=
+comment1.target=int\ size()
+comment10.params=tree\ plz
+comment10.target=java.util.List\ IDontCare1(BinaryNode,\ java.util.List)
+comment2.params=tree
+comment2.target=int\ findSize(BinaryNode)
+comment3.params=
+comment3.target=boolean\ isEmpty()
+comment4.params=element
+comment4.target=void\ add(java.lang.Comparable)
+comment5.params=element\ tree
+comment5.target=BinaryNode\ add(java.lang.Comparable,\ BinaryNode)
+comment6.params=element
+comment6.target=java.lang.Comparable\ fetch(java.lang.Comparable)
+comment7.params=element\ tree
+comment7.target=java.lang.Comparable\ fetch(java.lang.Comparable,\ BinaryNode)
+comment8.params=
+comment8.target=void\ clear()
+comment9.params=
+comment9.target=java.util.List\ createList()
+numComments=11
