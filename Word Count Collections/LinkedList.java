@@ -8,62 +8,72 @@ import java.util.ArrayList;
  */
 public class LinkedList<T extends Comparable<T>> implements WordCountCollection<T>
 {
-    // Returns the number of elements in this collection.
-    LLNode<T> meh = null;
+    LLNode<T> node = null;
     int size = 0;
-    public int size(){
+    
+    // Returns the number of elements in this collection.
+    public int size()
+    {
         return size;
     }
-
+    
     // Returns true if this collection is empty; otherwise, returns false.
-    public boolean isEmpty(){
-        return meh == null;
+    public boolean isEmpty()
+    {
+        return size == 0;
     }
 
     // Adds element to this collection.
     // Precondition: element is not already in the collection
-    public void add (T element){
-        if(meh == null)
-            meh = new LLNode<T>(element);
-        else{
-            LLNode<T> mehh = meh;
-            while(mehh.getLink() != null){
-                mehh = mehh.getLink();
-            }
-            mehh.setLink(new LLNode<T>(element));
+    public void add(T element)
+    {
+        if (node == null)
+        {
+            node = new LLNode<T>(element);
+            size++;
+            return;
         }
+        LLNode<T> temp = node;
+        while (temp.getLink() != null)
+        {
+            temp = temp.getLink();
+        }
+        temp.setLink(new LLNode<T>(element));
         size++;
     }
-
+    
     // Returns the element if this collection contains an element e such that
     // e.compareTo(element) == 0; otherwise, returns null.
-    public T fetch(T element){
-        LLNode<T> mehh = meh;
-        if(meh == null)
+    public T fetch(T element)
+    {
+        if (size == 0)
+        {
             return null;
-        while(mehh.getLink() != null){
-            if(mehh.getInfo().compareTo(element) == 0)
-                return mehh.getInfo();
-            mehh = mehh.getLink();
+        }
+        LLNode<T> temp = node;
+        while (temp.getLink() != null)
+        {
+            if (temp.getInfo().compareTo(element) == 0)
+            {
+                return temp.getInfo();
+            }
+            temp = temp.getLink();
         }
         return null;
     }
 
     // Removes all elements in this collection
-    public void clear(){
-        meh = null;
+    public void clear()
+    {
+        node = null;
         size = 0;
     }
-
+    
     // generates a list of the elements in the collection
     // Postcondion: list is independant (deep copy) of original collection
-    public List<T> createList(){
-        LLNode<T> hem = meh;
-        ArrayList<T> plz = new ArrayList<T>(null);
-        while(hem.getLink() != null){
-            plz.add(hem.getInfo());
-            hem = hem.getLink();
-        }
-        return plz;
+    public List<T> createList()
+    {
+        List<T> list = new ArrayList<T>();
+        
     }
 }
