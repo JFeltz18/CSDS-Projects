@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Heap()
+comment1.params=
+comment1.target=int\ size()
+comment2.params=
+comment2.target=boolean\ empty()
+comment3.params=element
+comment3.target=java.lang.Comparable\ add(java.lang.Comparable)
+comment4.params=element
+comment4.target=void\ reheapUp(java.lang.Comparable)
+comment5.params=
+comment5.target=java.lang.Comparable\ peek()
+comment6.params=
+comment6.target=java.lang.Comparable\ remove()
+comment7.params=element
+comment7.target=void\ reheapDown(java.lang.Comparable)
+comment8.params=
+comment8.target=void\ clear()
+comment9.params=hole\ element
+comment9.target=int\ newHole(int,\ java.lang.Comparable)
+numComments=10

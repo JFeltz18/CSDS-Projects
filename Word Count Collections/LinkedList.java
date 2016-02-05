@@ -74,6 +74,6 @@ public class LinkedList<T extends Comparable<T>> implements WordCountCollection<
     public List<T> createList()
     {
         List<T> list = new ArrayList<T>();
-        
+        return list;
     }
 }
