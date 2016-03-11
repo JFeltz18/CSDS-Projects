@@ -69,7 +69,7 @@ public class Heap<T extends Comparable<T>> implements PriorityQueue<T>
     {
         if (empty())
         {
-            return null;
+            throw new PQUnderflowException();
         }
         T temp = heap.get(0);
         T temp2 = heap.remove(size() - 1);

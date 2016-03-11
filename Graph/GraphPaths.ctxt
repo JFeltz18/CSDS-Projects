@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=graph\ startVertex\ endVertex
+comment0.target=boolean\ isPathDF(WeightedGraphInterface,\ java.lang.String,\ java.lang.String)
+comment1.params=graph\ startVertex\ endVertex
+comment1.target=boolean\ isPathBF(WeightedGraphInterface,\ java.lang.String,\ java.lang.String)
+comment2.params=graph\ startVertex
+comment2.target=QueueInterface\ shortestPaths(WeightedGraphInterface,\ java.lang.String)
+numComments=3
